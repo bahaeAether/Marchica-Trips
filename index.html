@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marchica Trips</title>
+    <meta name="description" content="Marchica Trips landing page" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
-  <body>
+
+  <body class="m-0 min-h-screen bg-white font-sans text-slate-900">
+    <header class="bg-[#e8f2fc]">
+      <div class="mx-auto grid h-20 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-3 sm:px-8">
+        <a class="flex w-fit items-center gap-1 text-[#152536] sm:gap-2" href="/" aria-label="Marchica home">
+          <svg class="h-7 w-7 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="20" fill="#174C59" />
+            <path d="M4 14c4.2-4 8.4 4 12.6 0s8.4-4 12.6 0 8.4 4 12.6 0" stroke="#31B8B2" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M4 22c4.2-4 8.4 4 12.6 0s8.4-4 12.6 0 8.4 4 12.6 0" stroke="#31B8B2" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M4 30c4.2-4 8.4 4 12.6 0s8.4-4 12.6 0 8.4 4 12.6 0" stroke="#31B8B2" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <span class="font-serif text-lg font-black italic tracking-tight sm:text-[28px]">marchica</span>
+        </a>
+
+        <nav class="col-start-2 flex items-center gap-1 text-[10px] sm:gap-8 sm:text-sm" aria-label="Main navigation">
+          <a class="font-medium text-[#328f8d]" href="/" aria-current="page">Home</a>
+          <a class="font-medium transition-colors hover:text-[#328f8d]" href="/src/pages/activities.html">Activities</a>
+          <a class="font-medium transition-colors hover:text-[#328f8d]" href="#reviews">Reviews</a>
+          <a class="font-medium transition-colors hover:text-[#328f8d]" href="#contact">Contact Us</a>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
