@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1512" height="392" viewBox="0 0 1512 392" preserveAspectRatio="none" role="presentation">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#0A2029"/>
+      <stop offset="0.45" stop-color="#143C49"/>
+      <stop offset="1" stop-color="#1E5362"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="0.62" cy="0.45" r="0.62">
+      <stop offset="0" stop-color="#2F7589" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#1E5362" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0A2029" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="vignette" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#05161D" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#05161D" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#05161D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1512" height="392" fill="url(#base)"/>
+  <rect width="1512" height="392" fill="url(#glow)"/>
+  <rect width="1512" height="392" fill="url(#vignette)"/>
+  <path d="M0 392 L0 332 Q756 298 1512 332 L1512 392 Z" fill="#05161D" opacity="0.28"/>
+</svg>
