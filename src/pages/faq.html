@@ -10,11 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
 
   
-    
-  
 </head>
 
 <body class="bg-[#dce8f6] font-[Inter,sans-serif] text-[#0f2236]">
+
   <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-[#0f2236] focus:px-4 focus:py-2 focus:text-white">
     Skip to main content
   </a>
@@ -72,8 +71,7 @@
           <a href="#" class="ml-1 font-bold hover:underline">Instagram</a>
         </p>
       </div>
-
-  <nav aria-label="Breadcrumb" class="mt-8 text-xs">
+      <nav aria-label="Breadcrumb" class="mt-8 text-xs">
         <ol class="flex gap-2">
           <li><a href="/index.html" class="hover:underline">Home</a></li>
           <li aria-hidden="true">/</li>
@@ -85,24 +83,106 @@
     </div>
   </section>
 
+  
   <main id="content" class="mx-auto grid max-w-6xl gap-8 px-4 py-10 lg:grid-cols-3 lg:px-8 lg:py-12">
     <div class="lg:col-span-2">
-      <h2 class="mb-3 text-lg font-semibold">Book and cancel</h2>
-      <div class="flex flex-col gap-3">
-        <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
-          <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-            Your question?
-            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white">▾</span>
-          </summary>
-          <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Your answer.</p>
-        </details>
-      </div>
-      <h2 class="mb-3 mt-8 text-lg font-semibold">Safety and weather</h2>
-      <div class="flex flex-col gap-3">
-      </div>
-      <h2 class="mb-3 mt-8 text-lg font-semibold">Prepare your outing</h2>
-      <div class="flex flex-col gap-3">
-      </div>
+      <!-- Book and cancel -->
+      <section aria-labelledby="group-booking">
+        <h2 id="group-booking" class="mb-3 text-lg font-semibold">Book and cancel</h2>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                How do I book an activity?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Fill in the <a href="booking.html" class="font-semibold text-[#0b7f74] underline">booking form</a>: activity, date and number of participants. We check availability and confirm your place within 24 h, by email or WhatsApp. No online payment is required.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                What is the cancellation policy?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Cancel free of charge up to 48 hours before your outing. After that, we offer you another date.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                Can I book for a group?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Yes. Tell us the group size in the booking form and we adapt the boats, guides and schedule.</p>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="group-safety">
+        <h2 id="group-safety" class="mb-3 mt-8 text-lg font-semibold">Safety and weather</h2>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                Do I need to know how to swim?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">No. A life jacket is provided and worn throughout the activity, and a guide stays with you. Just tell us if you are uneasy in the water.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                What happens in bad weather?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Safety comes first. If wind, storms or heat make the outing risky, we reschedule it for another date or refund it. We warn you the day before at the latest, or the same morning if the weather changes.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                Can children take part?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Yes, most activities are open from age 6 when accompanied by an adult. The minimum age is shown on each activity page.</p>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="group-prepare">
+        <h2 id="group-prepare" class="mb-3 mt-8 text-lg font-semibold">Prepare your outing</h2>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                What should I bring?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Sunscreen, a hat, water, and clothes that can get wet. For the Gourougou hike, add sturdy walking shoes.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                Which languages do your guides speak?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Our guides speak Arabic, French, Spanish and English.</p>
+            </details>
+          </li>
+          <li>
+            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
+              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
+                How do I get to the meeting point?
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+              </summary>
+              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">The exact address and a map link are sent in your confirmation. Nador-Al Aroui airport is about 25 minutes away, and we can arrange a transfer on request.</p>
+            </details>
+          </li>
+        </ul>
+      </section>
     </div>
     <aside aria-labelledby="help-title" class="h-fit rounded-xl bg-linear-to-br from-[#1b4a5c] to-[#0f2236] p-6 text-white lg:sticky lg:top-6">
       <p class="text-xs font-semibold uppercase">Still need help?</p>
@@ -112,7 +192,7 @@
         Write on WhatsApp
         <span class="sr-only">(opens in a new tab)</span>
       </a>
-     <p class="mt-4 text-center text-xs">Or book directly with <a href="booking.html" class="font-semibold underline">the form</a>.</p>
+      <p class="mt-4 text-center text-xs">Or book directly with <a href="booking.html" class="font-semibold underline">the form</a>.</p>
     </aside>
 
   </main>
