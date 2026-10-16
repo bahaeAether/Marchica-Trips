@@ -10,26 +10,26 @@
 
   
 </head>
-
 <body class="bg-[#dce8f6] font-[Inter,sans-serif] text-[#0f2236]">
 
   <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-[#0f2236] focus:px-4 focus:py-2 focus:text-white">
     Skip to main content
   </a>
 
-  <header class="bg-white">
+  <header class="bg-[#dce8f6]">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
       <a href="/index.html" class="flex items-center gap-2 text-xl font-extrabold italic">
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white">
-          <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/>
-        </svg>
+      <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/>
+    </svg>
         marchica
       </a>
       <nav aria-label="Main navigation" class="hidden md:block">
         <ul class="flex gap-8 text-sm">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="activities.html" class="font-semibold text-[#0b7f74]">Activities</a></li>
+          <li><a href="activities.html">Activities</a></li>
           <li><a href="#">Reviews</a></li>
+          <li><a href="faq.html" aria-current="page" class="font-semibold text-[#0b7f74]">FAQ</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
@@ -40,14 +40,15 @@
         <details class="relative md:hidden">
           <summary aria-label="Open menu" class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg border border-[#0f2236]">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="h-6 w-6">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
           </summary>
           <nav aria-label="Mobile navigation" class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow">
             <ul>
               <li><a href="/index.html" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Home</a></li>
-              <li><a href="activities.html" class="block rounded-lg px-4 py-3 font-semibold text-[#0b7f74] hover:bg-[#dce8f6]">Activities</a></li>
+              <li><a href="activities.html" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Activities</a></li>
               <li><a href="#" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Reviews</a></li>
+              <li><a href="faq.html" aria-current="page" class="block rounded-lg px-4 py-3 font-semibold text-[#0b7f74] hover:bg-[#dce8f6]">FAQ</a></li>
               <li><a href="#" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Contact Us</a></li>
             </ul>
           </nav>
@@ -93,27 +94,33 @@
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 How do I book an activity?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Fill in the <a href="booking.html" class="font-semibold text-[#0b7f74] underline">booking form</a>: activity, date and number of participants. We check availability and confirm your place within 24 h, by email or WhatsApp. No online payment is required.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Fill in the <a href="booking.html" class="font-semibold text-[#0b7f74] underline">booking form</a>: activity, date and number of participants. We check availability and confirm your place within 24 h, by email or WhatsApp. No online payment is required.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 What is the cancellation policy?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Cancel free of charge up to 48 hours before your outing. After that, we offer you another date.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Cancel free of charge up to 48 hours before your outing. After that, we offer you another date.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 Can I book for a group?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Yes. Tell us the group size in the booking form and we adapt the boats, guides and schedule.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Yes. Tell us the group size in the booking form and we adapt the boats, guides and schedule.</p>
             </details>
           </li>
         </ul>
@@ -125,27 +132,33 @@
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 Do I need to know how to swim?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">No. A life jacket is provided and worn throughout the activity, and a guide stays with you. Just tell us if you are uneasy in the water.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">No. A life jacket is provided and worn throughout the activity, and a guide stays with you. Just tell us if you are uneasy in the water.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 What happens in bad weather?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Safety comes first. If wind, storms or heat make the outing risky, we reschedule it for another date or refund it. We warn you the day before at the latest, or the same morning if the weather changes.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Safety comes first. If wind, storms or heat make the outing risky, we reschedule it for another date or refund it. We warn you the day before at the latest, or the same morning if the weather changes.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 Can children take part?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Yes, most activities are open from age 6 when accompanied by an adult. The minimum age is shown on each activity page.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Yes, most activities are open from age 6 when accompanied by an adult. The minimum age is shown on each activity page.</p>
             </details>
           </li>
         </ul>
@@ -157,27 +170,33 @@
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 What should I bring?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Sunscreen, a hat, water, and clothes that can get wet. For the Gourougou hike, add sturdy walking shoes.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Sunscreen, a hat, water, and clothes that can get wet. For the Gourougou hike, add sturdy walking shoes.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 Which languages do your guides speak?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">Our guides speak Arabic, French, Spanish and English.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Our guides speak Arabic, French, Spanish and English.</p>
             </details>
           </li>
           <li>
             <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
               <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
                 How do I get to the meeting point?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg></span>
+                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="m6 9 6 6 6-6"/>
+    </svg></span>
               </summary>
-              <p class="px-5 pb-5 text-sm leading-relaxed text-[#4b5b6b]">The exact address and a map link are sent in your confirmation. Nador-Al Aroui airport is about 25 minutes away, and we can arrange a transfer on request.</p>
+              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">The exact address and a map link are sent in your confirmation. Nador-Al Aroui airport is about 25 minutes away, and we can arrange a transfer on request.</p>
             </details>
           </li>
         </ul>
@@ -186,10 +205,9 @@
     <aside aria-labelledby="help-title" class="h-fit rounded-xl bg-linear-to-br from-[#1b4a5c] to-[#0f2236] p-6 text-white lg:sticky lg:top-6">
       <p class="text-xs font-semibold uppercase">Still need help?</p>
       <h2 id="help-title" class="mt-2 text-2xl font-bold">Can’t find your answer?</h2>
-      <p class="mt-2 text-sm">Write to us and we reply within 24 h, by email or WhatsApp.</p>
-      <a href="https://wa.me/" target="_blank" rel="noopener" class="mt-5 flex min-h-11 w-full items-center justify-center rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]">
-        Write on WhatsApp
-        <span class="sr-only">(opens in a new tab)</span>
+      <p class="mt-2 text-sm">Send us a message from the contact page and we reply within 24 h.</p>
+      <a href="contact.html" class="mt-5 flex min-h-11 w-full items-center justify-center rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]">
+        Contact us
       </a>
       <p class="mt-4 text-center text-xs">Or book directly with <a href="booking.html" class="font-semibold underline">the form</a>.</p>
     </aside>
@@ -201,8 +219,8 @@
       <div>
         <a href="/index.html" class="flex items-center gap-2 text-xl font-extrabold italic">
           <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white">
-            <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/>
-          </svg>
+      <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/>
+    </svg>
           marchica
         </a>
         <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
