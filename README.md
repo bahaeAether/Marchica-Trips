@@ -41,5 +41,6 @@ Projet réalisé en équipe Squad dans le cadre du Brief 2. Chaque membre contri
 
 ## Liens
 
-- Maquette Figma : https://www.figma.com/design/JlVoTsiHEf3Q49TnITUWJk/Untitled?node-id=0-1
-- Site en ligne : https://bahaeaether.github.io/Marchica-Trips/
+- [Maquette Figma](https://www.figma.com/design/JlVoTsiHEf3Q49TnITUWJk/Untitled?node-id=0-1)
+- [Site en ligne](https://bahaeaether.github.io/Marchica-Trips/)
+- [Board Jira](https://bahaeddinesteam.atlassian.net/jira/software/projects/KAN/boards/1?filter=assignee+%3D+712020%3A7ac5f8ca-d954-48b3-8efc-32b235d9cd44&groupBy=none&atlOrigin=eyJpIjoiMGU3MmQzYTlkOGE3NDc4ZjhhYzkyM2NlOTRkNWRkODciLCJwIjoiaiJ9)
