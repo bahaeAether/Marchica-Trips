@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book your outing – Marchica Ocean Adventures</title>
+</head>
+<body>
+
+  <main>
+    <h1>Book your outing</h1>
+
+    <p>Fields marked with <span aria-hidden="true">*</span> are required.</p>
+
+    <!-- Two-column layout wrapper: form on the left, aside on the right -->
+    <div>
+
+      <!-- ========== BOOKING FORM ========== -->
+      <form action="#" method="post">
+
+        <!-- Card 1: Your outing -->
+        <section aria-labelledby="outing-title">
+          <h2 id="outing-title">Your outing</h2>
+
+          <div>
+            <label for="activity">Activity <span aria-hidden="true">*</span></label>
+            <select id="activity" name="activity" required aria-describedby="activity-hint">
+              <option value="sunrise-kayak" selected>Sunrise Kayak (€35 per person)</option>
+              <!-- Other activities go here -->
+            </select>
+            <p id="activity-hint">Prices are per person.</p>
+          </div>
+
+          <div>
+            <div>
+              <label for="date">Preferred date <span aria-hidden="true">*</span></label>
+              <input type="date" id="date" name="date" required aria-describedby="date-hint">
+              <p id="date-hint">Choose an upcoming day. We confirm availability.</p>
+            </div>
+
+            <div>
+              <label for="participants">Number of participants <span aria-hidden="true">*</span></label>
+              <input type="number" id="participants" name="participants" min="1" max="12" required aria-describedby="participants-hint">
+              <p id="participants-hint">Between 1 and 12 people. For more, write to us.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2: Your details -->
+        <section aria-labelledby="details-title">
+          <h2 id="details-title">Your details</h2>
+
+          <div>
+            <div>
+              <label for="first-name">First name <span aria-hidden="true">*</span></label>
+              <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+            </div>
+
+            <div>
+              <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+              <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+            <p id="email-hint">We write to you here to confirm.</p>
+          </div>
+
+          <div>
+            <label for="phone">Phone or WhatsApp</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-hint">
+            <p id="phone-hint">Optional. With the country code, for example +33 6 12 34 56 78. Useful to warn you about the weather.</p>
+          </div>
+
+          <fieldset>
+            <legend>Language of the confirmation</legend>
+
+            <div>
+              <input type="radio" id="lang-fr" name="language" value="fr" checked>
+              <label for="lang-fr">French</label>
+            </div>
+            <div>
+              <input type="radio" id="lang-en" name="language" value="en">
+              <label for="lang-en">English</label>
+            </div>
+            <div>
+              <input type="radio" id="lang-ar" name="language" value="ar">
+              <label for="lang-ar">Arabic</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <!-- Card 3: To prepare your outing -->
+        <section aria-labelledby="prepare-title">
+          <h2 id="prepare-title">To prepare your outing</h2>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" maxlength="500" aria-describedby="message-hint"></textarea>
+            <p id="message-hint">Optional. Allergies, children's ages, special needs: 500 characters maximum.</p>
+          </div>
+
+          <div>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree that Marchica Ocean Adventures may use this information to answer my booking request. <span aria-hidden="true">*</span></label>
+          </div>
+        </section>
+
+        <!-- Form footer -->
+        <div>
+          <button type="submit">
+            Send my booking request
+            <span aria-hidden="true">→</span>
+          </button>
+          <p>We reply within 24 h. You can cancel free of charge up to 48 h before the outing.</p>
+        </div>
+
+      </form>
+
+      <!-- ========== SIDEBAR ========== -->
+      <aside aria-label="Booking information">
+
+        <!-- Selection summary card -->
+        <section aria-labelledby="selection-title">
+          <p>Your selection</p>
+          <h2 id="selection-title">Sunrise Kayak</h2>
+          <p>
+            <strong>€35</strong>
+            <span>per person</span>
+          </p>
+
+          <ul>
+            <li><!-- clock icon --> 2 h 30</li>
+            <li><!-- people icon --> Up to 8 people</li>
+            <li><!-- shield icon --> Free cancellation up to 48 h before</li>
+          </ul>
+        </section>
+
+        <!-- Good to know card -->
+        <section aria-labelledby="info-title">
+          <h2 id="info-title">Good to know</h2>
+
+          <ul>
+            <li><!-- clock icon --> Confirmation by email or WhatsApp within 24 h.</li>
+            <li><!-- shield icon --> Free cancellation up to 48 h before the outing.</li>
+            <li><!-- calendar icon --> In case of bad weather, we reschedule the outing or refund it.</li>
+          </ul>
+
+          <p>Prefer to write? Contact us directly.</p>
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+            Write on WhatsApp
+            <!-- external-link icon -->
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </section>
+
+      </aside>
+
+    </div>
+  </main>
+
+</body>
+</html>
