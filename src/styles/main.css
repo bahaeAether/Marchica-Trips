@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+  /* --- BRAND COLORS --- */
+  --color-teal: #0fa28d;
+  --color-navy: #15273b;
+  --color-hero: #274757;
+  --color-page: #e8f3ff;
+  --color-star: #fcc223;
+
+  /* --- BRAND VARIATIONS & SWATCHES --- */
+  /* Teal Variations */
+  --color-teal-strong: #0a6b5d;
+  --color-teal-light: #52ecd4;
+  --color-teal-accent: #2bedcf;
+
+  /* Dark Blue / Navy Neutrals */
+  --color-navy-dark: #0d1926;
+  --color-navy-muted: #1e334a;
+  --color-navy-tint: #2c4a6b;
+  --color-navy-light: #44688f;
+
+  /* Functional Slates & Grays */
+  --color-slate-900: #1b2126;
+  --color-slate-700: #2e3840;
+  --color-slate-500: #465561;
+  --color-slate-300: #627585;
+  --color-slate-200: #8c9fae;
+  --color-slate-100: #b5c7d6;
+  --color-slate-50: #dae5ef;
+
+  /* System Indicators */
+  --color-success: #29eb62;
+  --color-info: #0d8cf7;
+  --color-error: #e62222;
+
+  /* --- TYPOGRAPHY --- */
+  --font-display: "Inter", "sans-serif";
+
+  /* Specific weights matching guidelines */
+  --font-weight-title: 700;
+  --font-weight-heading: 600;
+  --font-weight-subheading: 500;
+  --font-weight-body: 400;
+}
