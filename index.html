@@ -8,7 +8,262 @@
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
 
-  <body>
-    <h1 class="text-3xl font-bold text-center">Welcome to Marchica Trips</h1>
+  <body class="bg-background">
+    <header class="bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8"
+      >
+        <a
+          href="/index.html"
+          class="flex items-center gap-2 text-xl font-extrabold italic"
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
+          >
+            <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
+          </svg>
+          marchica
+        </a>
+        <nav aria-label="Main navigation" class="hidden md:block">
+          <ul class="flex gap-8 text-sm">
+            <li>
+              <a href="/index.html" class="font-semibold text-[#0b7f74]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/src/pages/activities.html">Activities</a>
+            </li>
+            <li><a href="/src/pages/faq.html">FAQ</a></li>
+            <li><a href="/src/pages/booking.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            href="/src/pages/booking.html"
+            class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+          >
+            Book Now
+          </a>
+          <details class="relative md:hidden">
+            <summary
+              aria-label="Open menu"
+              class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg border border-[#0f2236]"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                class="h-6 w-6"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </summary>
+            <nav
+              aria-label="Mobile navigation"
+              class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/index.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/pages/activities.html"
+                    class="block rounded-lg px-4 py-3 font-semibold text-[#0b7f74] hover:bg-[#dce8f6]"
+                    >Activities</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#reviews"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Reviews</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/pages/booking.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <section
+      aria-labelledby="page-title"
+      class="relative overflow-hidden bg-linear-to-br from-[#1b4a5c] to-[#0f2236] text-white"
+    >
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 1440 160"
+        preserveAspectRatio="none"
+        class="pointer-events-none absolute bottom-0 left-0 h-24 w-full lg:h-32"
+      >
+        <path
+          d="M0 90c180-60 360-60 540-10s360 70 540 20 270-60 360-40v100H0Z"
+          fill="#ffffff"
+          fill-opacity="0.05"
+        />
+        <path
+          d="M0 120c200-50 380-30 560 0s340 50 520 10 260-40 360-20v50H0Z"
+          fill="#0f2236"
+          fill-opacity="0.35"
+        />
+      </svg>
+      <div class="mx-auto max-w-6xl px-4 pb-15 pt-5 lg:px-8 lg:pb-16">
+        <div class="flex items-center justify-between text-xs uppercase">
+          <p class="rounded-full bg-[#0f2236] px-3 py-1 font-semibold">
+            Nador Morocco
+          </p>
+          <p class="hidden sm:block">
+            Follow us
+            <a href="#" class="font-bold hover:underline">Facebook</a>
+            <a href="#" class="ml-1 font-bold hover:underline">Instagram</a>
+          </p>
+        </div>
+        <h1 id="page-title" class="mt-3 text-4xl font-extrabold md:text-5xl">
+          Marchica
+        </h1>
+        <p class="mt-4 max-w-md text-sm">
+          Marchica adventures & Expedition Excursions
+        </p>
+        <div class="mt-4 max-w-md inline-flex gap-2">
+          <a
+            href="/src/pages/activities.html"
+            class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+          >
+            Explore Waves
+            <svg
+              class="inline"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.75 7H12.25M7.875 11.375L12.25 7L7.875 2.625"
+                stroke="white"
+                stroke-width="1.575"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="text-3xl text-[#0F2238] m-[25px]">welcome to marchica</h1>
+
+    <footer class="bg-[#0f2236] text-white">
+      <div
+        class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 lg:px-8"
+      >
+        <div>
+          <a
+            href="/index.html"
+            class="flex items-center gap-2 text-xl font-extrabold italic"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
+            >
+              <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
+            </svg>
+            marchica
+          </a>
+          <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
+            Premium expeditions including Kayaking across the lagoon, custom
+            Boat Trips, Hiking trails on Mount Gourougou, and authentic Culinary
+            Experiences, all designed for discovery.
+          </p>
+          <ul class="mt-5 flex gap-2">
+            <li>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >f</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >ig</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >yt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form aria-labelledby="news-title" class="md:justify-self-end">
+          <label id="news-title" for="email" class="text-sm text-[#dce8f6]"
+            >Subscribe for wave condition alerts &amp; discounts</label
+          >
+          <div class="mt-2 flex">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="Your email address"
+              class="min-w-0 flex-1 rounded-l-xl bg-[#1b4a5c] px-4 py-3 text-sm text-white placeholder:text-[#dce8f6]"
+            />
+            <button
+              type="submit"
+              class="rounded-r-xl bg-[#0b7f74] px-5 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+            >
+              Join
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="border-t border-[#1b4a5c]">
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-[#dce8f6] md:flex-row md:justify-between lg:px-8"
+        >
+          <p>© 2026 Marchica Ocean Adventures. All rights reserved.</p>
+          <ul class="flex gap-4">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Safety Protocols</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
