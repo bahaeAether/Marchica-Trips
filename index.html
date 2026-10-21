@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
 
-  <body class="bg-background">
+  <body class="bg-page">
     <header class="bg-white">
       <div
         class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8"
@@ -173,7 +173,212 @@
       </div>
     </section>
 
-    <h1 class="text-3xl text-[#0F2238] m-[25px]">welcome to marchica</h1>
+    <article class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div class="bg-amber-50 h-[600px] rounded-2xl m-[10px] flex flex-col">
+        <img
+          class="rounded-2xl w-full h-52 object-cover"
+          src="src/assets/images/kayaking in sunrise.jpg"
+          alt="kayak at sunrise"
+        />
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="text-[28px] text-[#0F2238] font-bold">Sunrise Kayak</h3>
+          <p class="text-[18px] text-[#4B5B6E]">
+            Glide over still water as the day breaks over the lagoon.
+          </p>
+          <p class="text-[15px] text-[#4B5B6E] pt-[15px]">
+            duration : 2h 30 |
+            <span class="text-[10px]"> min number : Up to 8 people </span>
+          </p>
+          <div class="flex mt-auto justify-between">
+            <p class="text-[#6B7A8C] text[10px]">
+              From :<span class="text-[#0F2238] text-[20px] font-bold"
+                >€35
+              </span>
+            </p>
+            <a href="src/pages/booking.html" class="text-[#0D9488] font-bold"
+              >Details -></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 h-[600px] rounded-2xl m-[10px] flex flex-col">
+        <img
+          class="rounded-2xl w-full h-52 object-cover"
+          src="src/assets/images/kayaking at night.jpg"
+          alt="kayak at night"
+        />
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="text-[28px] text-[#0F2238] font-bold">Starlight Kayak</h3>
+          <p class="text-[18px] text-[#4B5B6E]">
+            Paddle by lantern light under a sky with no light pollution.
+          </p>
+          <p class="text-[15px] text-[#4B5B6E] pt-[15px]">
+            duration : 2h |
+            <span class="text-[10px]"> min number : Up to 6 people </span>
+          </p>
+          <div class="flex mt-auto justify-between">
+            <p class="text-[#6B7A8C] text[10px]">
+              From :<span class="text-[#0F2238] text-[20px] font-bold"
+                >€45
+              </span>
+            </p>
+            <a href="src/pages/booking.html" class="text-[#0D9488] font-bold"
+              >Details-></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-50 h-[600px] rounded-2xl m-[10px] flex flex-col">
+        <img
+          class="rounded-2xl w-full h-52 object-cover"
+          src="src/assets/images/Traditional-Moroccan-food.webp"
+          alt="Traditional Moroccan food"
+        />
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="text-[28px] text-[#0F2238] font-bold">
+            Traditional Moroccan food
+          </h3>
+          <p class="text-[18px] text-[#4B5B6E]">
+            Embark on a delicious journey through Morocco’s rich culinary
+            heritage! From the aromatic spices of traditional tagines.
+          </p>
+          <p class="text-[15px] text-[#4B5B6E] pt-[15px]">
+            duration : 1h 30 |
+            <span class="text-[10px]"> min number : Up to 8 people </span>
+          </p>
+          <div class="flex mt-auto justify-between">
+            <p class="text-[#6B7A8C] text[10px]">
+              From :<span class="text-[#0F2238] text-[20px] font-bold"
+                >€20
+              </span>
+            </p>
+            <a href="src/pages/booking.html" class="text-[#0D9488] font-bold"
+              >Details -></a
+            >
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section
+      id="reviews"
+      class="testimonials mx-auto max-w-6xl px-4 py-12 lg:px-8"
+    >
+      <header class="flex flex-col items-center gap-2 text-center">
+        <p class="text-teal font-semibold text-lg/1">Testimonials</p>
+        <h2 class="text-2xl font-bold text-navy">What Adventurers Say</h2>
+        <p class="text-sm/relaxed max-w-[60%] mb-2 tracking-tight">
+          Real experiences from hikers, food lovers, and explorers around
+          Marchica.
+        </p>
+      </header>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article
+          class="testimonial-card flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="text-lg tracking-[0.2em] text-star"
+              role="img"
+              aria-label="5 out of 5 stars"
+              >★★★★★</span
+            >
+            <span class="text-sm font-semibold text-navy">5.0</span>
+          </div>
+          <blockquote
+            class="mt-4 flex-1 text-sm italic leading-6 text-slate-700"
+          >
+            “Hiking up Mount Gourougou was unbelievable! The guides knew every
+            trail and offered stunning views of the lagoon. Hands down the
+            highlight of our trip!”
+          </blockquote>
+          <footer
+            class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4"
+          >
+            <span
+              aria-hidden="true"
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1594c1] text-xs font-bold text-white"
+              >EV</span
+            >
+            <div>
+              <p class="text-sm font-semibold text-navy">Elena Vance</p>
+              <p class="text-xs text-slate-500">California, USA</p>
+            </div>
+          </footer>
+        </article>
+
+        <article
+          class="testimonial-card flex h-full flex-col rounded-2xl border-2 border-[#a9e9d5] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="text-lg tracking-[0.2em] text-star"
+              role="img"
+              aria-label="5 out of 5 stars"
+              >★★★★★</span
+            >
+            <span class="text-sm font-semibold text-navy">5.0</span>
+          </div>
+          <blockquote
+            class="mt-4 flex-1 text-sm italic leading-6 text-slate-700"
+          >
+            “Exploring Marchica lagoon by boat &amp; kayak was pure magic. Top
+            tier equipment, friendly local experts, and seamless booking from
+            start to finish!”
+          </blockquote>
+          <footer
+            class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4"
+          >
+            <span
+              aria-hidden="true"
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teal text-xs font-bold text-white"
+              >MB</span
+            >
+            <div>
+              <p class="text-sm font-semibold text-navy">Marcus Brody</p>
+              <p class="text-xs text-slate-500">Sydney, Australia</p>
+            </div>
+          </footer>
+        </article>
+
+        <article
+          class="testimonial-card flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="text-lg tracking-[0.2em] text-star"
+              role="img"
+              aria-label="4.8 out of 5 stars"
+              >★★★★★</span
+            >
+            <span class="text-sm font-semibold text-navy">4.8</span>
+          </div>
+          <blockquote
+            class="mt-4 flex-1 text-sm italic leading-6 text-slate-700"
+          >
+            “The culinary tour in Marchica was total bliss. Fresh seafood by the
+            lagoon and authentic local flavors made it the absolute highlight of
+            our holiday trip!”
+          </blockquote>
+          <footer
+            class="mt-4 flex items-center gap-3 border-t border-slate-100 pt-4"
+          >
+            <span
+              aria-hidden="true"
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f59e0b] text-xs font-bold text-white"
+              >SJ</span
+            >
+            <div>
+              <p class="text-sm font-semibold text-navy">Sarah Jenkins</p>
+              <p class="text-xs text-slate-500">London, UK</p>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </section>
 
     <footer class="bg-[#0f2236] text-white">
       <div
