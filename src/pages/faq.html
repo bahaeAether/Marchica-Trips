@@ -1,264 +1,634 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FAQ – Marchica Trips</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAQ – Marchica Trips</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/assets/index-D9tbdeKf.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  </head>
+  <body class="bg-[#E0EBF7]">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2"
+      >Skip to content</a
+    >
 
-
-</head>
-<body class="bg-[#E0EBF7]">
-
-  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2">Skip to content</a>
-
-  <header class="bg-white">
-    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
-      <a href="/index.html" class="flex items-center gap-2 text-xl font-extrabold italic">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" /></svg>
-        marchica
-      </a>
-       <nav aria-label="Main navigation" class="hidden md:block">
+    <header class="bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8"
+      >
+        <a
+          href="/index.html"
+          class="flex items-center gap-2 text-xl font-extrabold italic"
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
+          >
+            <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
+          </svg>
+          marchica
+        </a>
+        <nav aria-label="Main navigation" class="hidden md:block">
           <ul class="flex gap-8 text-sm">
             <li>
-              <a href="/index.html"
-                >Home</a
-              >
+              <a href="/index.html">Home</a>
             </li>
             <li>
-              <a href="/src/pages/activities.html"
-              >Activities</a>
+              <a href="/src/pages/activities.html">Activities</a>
             </li>
-            <li><a href="/src/pages/faq.html"  class="font-semibol text-[#0b7f74]">FAQ</a></li>
+            <li>
+              <a href="/src/pages/faq.html" class="font-semibol text-[#0b7f74]"
+                >FAQ</a
+              >
+            </li>
             <li><a href="/src/pages/booking.html">Contact Us</a></li>
           </ul>
         </nav>
 
-      <div class="flex items-center gap-2">
-        <a href="booking.html" class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]">Book Now</a>
-        <details class="relative md:hidden">
-          <summary aria-label="Open menu" class="flex h-11 w-11 cursor-pointer list-none [&::-webkit-details-marker]:hidden items-center justify-center rounded-lg border border-[#0f2236]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="h-6 w-6"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </summary>
-          <nav aria-label="Mobile navigation" class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow">
-            <ul>
-              <li><a href="/index.html" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Home</a></li>
-              <li><a href="activities.html" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Activities</a></li>
-              <li><a href="faq.html" aria-current="page" class="block rounded-lg bg-[#dce8f6] px-4 py-3 font-bold text-[#0a6b62]">FAQ</a></li>
-              <li><a href="#contact" class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]">Contact Us</a></li>
-            </ul>
-          </nav>
-        </details>
-      </div>
-    </div>
-  </header>
-
-  <section aria-labelledby="page-title" class="relative overflow-hidden bg-linear-to-br from-[#1b4a5c] to-[#0f2236] text-white">
-    <svg aria-hidden="true" viewBox="0 0 1440 160" preserveAspectRatio="none" class="pointer-events-none absolute bottom-0 left-0 h-24 w-full lg:h-32">
-      <path d="M0 90c180-60 360-60 540-10s360 70 540 20 270-60 360-40v100H0Z" fill="#ffffff" fill-opacity="0.05"/>
-      <path d="M0 120c200-50 380-30 560 0s340 50 520 10 260-40 360-20v50H0Z" fill="#0f2236" fill-opacity="0.35"/>
-    </svg>
-    <div class="relative mx-auto max-w-6xl px-4 pb-12 pt-5 lg:px-8 lg:pb-16">
-      <div class="flex items-center justify-between text-xs uppercase">
-        <p class="rounded-full bg-[#0f2236] px-3 py-1 font-semibold">Nador, Morocco</p>
-        <p class="hidden sm:block">
-          Follow us
-          <a href="#" class="font-bold hover:underline">Facebook</a>
-          <a href="#" class="ml-1 font-bold hover:underline">Instagram</a>
-        </p>
-      </div>
-      <nav aria-label="Breadcrumb" class="mt-8 text-xs">
-        <ol class="flex gap-2">
-          <li><a href="/index.html" class="hover:underline">Home</a></li>
-          <li aria-hidden="true">/</li>
-          <li aria-current="page">FAQ</li>
-        </ol>
-      </nav>
-      <h1 id="page-title" class="mt-3 text-4xl font-extrabold md:text-5xl">Frequently asked questions</h1>
-      <p class="mt-4 max-w-md text-sm">An answer to every question before you leave. If yours is not here, write to us.</p>
-    </div>
-  </section>
-
-
-  <main id="content" class="mx-auto grid max-w-6xl gap-8 px-4 py-10 lg:grid-cols-3 lg:px-8 lg:py-12">
-    <div class="lg:col-span-2">
-      <!-- Book and cancel -->
-      <section aria-labelledby="group-booking">
-        <h2 id="group-booking" class="mb-3 text-lg font-semibold">Book and cancel</h2>
-        <ul class="flex flex-col gap-3">
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                How do I book an activity?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Fill in the <a href="booking.html" class="font-semibold text-[#0b7f74] underline">booking form</a>: activity, date and number of participants. We check availability and confirm your place within 24 h, by email or WhatsApp. No online payment is required.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                What is the cancellation policy?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Cancel free of charge up to 48 hours before your outing. After that, we offer you another date.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                Can I book for a group?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Yes. Tell us the group size in the booking form and we adapt the boats, guides and schedule.</p>
-            </details>
-          </li>
-        </ul>
-      </section>
-      <section aria-labelledby="group-safety">
-        <h2 id="group-safety" class="mb-3 mt-8 text-lg font-semibold">Safety and weather</h2>
-        <ul class="flex flex-col gap-3">
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                Do I need to know how to swim?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">No. A life jacket is provided and worn throughout the activity, and a guide stays with you. Just tell us if you are uneasy in the water.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]" open>
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                What happens in bad weather?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Safety comes first. If wind, storms or heat make the outing risky, we reschedule it for another date or refund it. We warn you the day before at the latest, or the same morning if the weather changes.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                Can children take part?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Yes, most activities are open from age 6 when accompanied by an adult. The minimum age is shown on each activity page.</p>
-            </details>
-          </li>
-        </ul>
-      </section>
-      <section aria-labelledby="group-prepare">
-        <h2 id="group-prepare" class="mb-3 mt-8 text-lg font-semibold">Prepare your outing</h2>
-        <ul class="flex flex-col gap-3">
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                What should I bring?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Sunscreen, a hat, water, and clothes that can get wet. For the Gourougou hike, add sturdy walking shoes.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                Which languages do your guides speak?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">Our guides speak Arabic, French, Spanish and English.</p>
-            </details>
-          </li>
-          <li>
-            <details class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]">
-              <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold">
-                How do I get to the meeting point?
-                <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-      <path d="m6 9 6 6 6-6"/>
-    </svg></span>
-              </summary>
-              <p class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]">The exact address and a map link are sent in your confirmation. Nador-Al Aroui airport is about 25 minutes away, and we can arrange a transfer on request.</p>
-            </details>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <aside aria-labelledby="help-title" class="h-fit rounded-xl bg-linear-to-br from-[#1b4a5c] to-[#0f2236] p-6 text-white lg:sticky lg:top-6">
-      <p class="text-xs font-semibold uppercase">Still need help?</p>
-      <h2 id="help-title" class="mt-2 text-2xl font-bold">Can’t find your answer?</h2>
-      <p class="mt-2 text-sm">Send us a message from the contact page and we reply within 24 h.</p>
-      <a href="contact.html" class="mt-5 flex min-h-11 w-full items-center justify-center rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]">
-        Contact us
-      </a>
-      <p class="mt-4 text-center text-xs">Or book directly with <a href="booking.html" class="font-semibold underline">the form</a>.</p>
-    </aside>
-
-  </main>
-
-  <section id="contact" class="p-1 m-[25px] rounded-[18px] bg-[#112B39]">
-    <div class="m-[25px] flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-      <div>
-        <h2 class="text-[28px] font-bold text-[#ffffff]">Can’t find your answer?</h2>
-        <p class="text-[18px] text-[#D6E6EC]">Write to us and we reply within 24 h, by email or WhatsApp.</p>
-      </div>
-      <a href="https://wa.me/212600000000" target="_blank" rel="noopener" class="flex items-center gap-2 rounded-full bg-[#0b7f74] px-6 py-3 text-sm font-bold text-white hover:bg-[#1b4a5c]">
-        Write on WhatsApp <span aria-hidden="true">&rarr;</span>
-        <span class="sr-only">(opens in a new tab)</span>
-      </a>
-    </div>
-  </section>
-
-  <footer class="bg-[#0f2236] text-white">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 lg:px-8">
-      <div>
-        <a href="/index.html" class="flex items-center gap-2 text-xl font-extrabold italic">
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" /></svg>
-          marchica
-        </a>
-        <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
-          Premium expeditions including Kayaking across the lagoon, custom Boat Trips, Hiking trails on Mount Gourougou, and authentic Culinary Experiences, all designed for discovery.
-        </p>
-        <ul class="mt-5 flex gap-2">
-          <li><a href="#" aria-label="Facebook" class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]">f</a></li>
-          <li><a href="#" aria-label="Instagram" class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]">ig</a></li>
-          <li><a href="#" aria-label="YouTube" class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]">yt</a></li>
-        </ul>
-      </div>
-      <form aria-labelledby="news-title" class="md:justify-self-end">
-        <label id="news-title" for="email" class="text-sm text-[#dce8f6]">Subscribe for wave condition alerts &amp; discounts</label>
-        <div class="mt-2 flex">
-          <input id="email" name="email" type="email" required autocomplete="email" placeholder="Your email address" class="min-w-0 flex-1 rounded-l-xl bg-[#1b4a5c] px-4 py-3 text-sm text-white placeholder:text-[#dce8f6]" />
-          <button type="submit" class="rounded-r-xl bg-[#0b7f74] px-5 text-sm font-semibold text-white hover:bg-[#1b4a5c]">Join</button>
+        <div class="flex items-center gap-2">
+          <a
+            href="booking.html"
+            class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+            >Book Now</a
+          >
+          <details class="relative md:hidden">
+            <summary
+              aria-label="Open menu"
+              class="flex h-11 w-11 cursor-pointer list-none [&::-webkit-details-marker]:hidden items-center justify-center rounded-lg border border-[#0f2236]"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                class="h-6 w-6"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </summary>
+            <nav
+              aria-label="Mobile navigation"
+              class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/index.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="activities.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Activities</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    aria-current="page"
+                    class="block rounded-lg bg-[#dce8f6] px-4 py-3 font-bold text-[#0a6b62]"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </details>
         </div>
-      </form>
-    </div>
-    <div class="border-t border-[#1b4a5c]">
-      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-[#dce8f6] md:flex-row md:justify-between lg:px-8">
-        <p>© 2026 Marchica Ocean Adventures. All rights reserved.</p>
-        <ul class="flex gap-4">
-          <li><a href="/src/pages/privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
-          <li><a href="#" class="hover:underline">Terms of Service</a></li>
-          <li><a href="#" class="hover:underline">Safety Protocols</a></li>
-        </ul>
       </div>
-    </div>
-  </footer>
-</body>
+    </header>
+
+    <section
+      aria-labelledby="page-title"
+      class="relative overflow-hidden bg-linear-to-br from-[#1b4a5c] to-[#0f2236] text-white"
+    >
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 1440 160"
+        preserveAspectRatio="none"
+        class="pointer-events-none absolute bottom-0 left-0 h-24 w-full lg:h-32"
+      >
+        <path
+          d="M0 90c180-60 360-60 540-10s360 70 540 20 270-60 360-40v100H0Z"
+          fill="#ffffff"
+          fill-opacity="0.05"
+        />
+        <path
+          d="M0 120c200-50 380-30 560 0s340 50 520 10 260-40 360-20v50H0Z"
+          fill="#0f2236"
+          fill-opacity="0.35"
+        />
+      </svg>
+      <div class="relative mx-auto max-w-6xl px-4 pb-12 pt-5 lg:px-8 lg:pb-16">
+        <div class="flex items-center justify-between text-xs uppercase">
+          <p class="rounded-full bg-[#0f2236] px-3 py-1 font-semibold">
+            Nador, Morocco
+          </p>
+          <p class="hidden sm:block">
+            Follow us
+            <a href="#" class="font-bold hover:underline">Facebook</a>
+            <a href="#" class="ml-1 font-bold hover:underline">Instagram</a>
+          </p>
+        </div>
+        <nav aria-label="Breadcrumb" class="mt-8 text-xs">
+          <ol class="flex gap-2">
+            <li><a href="/index.html" class="hover:underline">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">FAQ</li>
+          </ol>
+        </nav>
+        <h1 id="page-title" class="mt-3 text-4xl font-extrabold md:text-5xl">
+          Frequently asked questions
+        </h1>
+        <p class="mt-4 max-w-md text-sm">
+          An answer to every question before you leave. If yours is not here,
+          write to us.
+        </p>
+      </div>
+    </section>
+
+    <main
+      id="content"
+      class="mx-auto grid max-w-6xl gap-8 px-4 py-10 lg:grid-cols-3 lg:px-8 lg:py-12"
+    >
+      <div class="lg:col-span-2">
+        <!-- Book and cancel -->
+        <section aria-labelledby="group-booking">
+          <h2 id="group-booking" class="mb-3 text-lg font-semibold">
+            Book and cancel
+          </h2>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+                open
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  How do I book an activity?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Fill in the
+                  <a
+                    href="booking.html"
+                    class="font-semibold text-[#0b7f74] underline"
+                    >booking form</a
+                  >: activity, date and number of participants. We check
+                  availability and confirm your place within 24 h, by email or
+                  WhatsApp. No online payment is required.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  What is the cancellation policy?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Cancel free of charge up to 48 hours before your outing. After
+                  that, we offer you another date.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  Can I book for a group?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Yes. Tell us the group size in the booking form and we adapt
+                  the boats, guides and schedule.
+                </p>
+              </details>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="group-safety">
+          <h2 id="group-safety" class="mb-3 mt-8 text-lg font-semibold">
+            Safety and weather
+          </h2>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  Do I need to know how to swim?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  No. A life jacket is provided and worn throughout the
+                  activity, and a guide stays with you. Just tell us if you are
+                  uneasy in the water.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+                open
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  What happens in bad weather?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Safety comes first. If wind, storms or heat make the outing
+                  risky, we reschedule it for another date or refund it. We warn
+                  you the day before at the latest, or the same morning if the
+                  weather changes.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  Can children take part?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Yes, most activities are open from age 6 when accompanied by
+                  an adult. The minimum age is shown on each activity page.
+                </p>
+              </details>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="group-prepare">
+          <h2 id="group-prepare" class="mb-3 mt-8 text-lg font-semibold">
+            Prepare your outing
+          </h2>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  What should I bring?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Sunscreen, a hat, water, and clothes that can get wet. For the
+                  Gourougou hike, add sturdy walking shoes.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  Which languages do your guides speak?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  Our guides speak Arabic, French, Spanish and English.
+                </p>
+              </details>
+            </li>
+            <li>
+              <details
+                class="group rounded-xl border border-white bg-white shadow open:border-[#0b7f74]"
+              >
+                <summary
+                  class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold"
+                >
+                  How do I get to the meeting point?
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#dce8f6] group-open:rotate-180 group-open:bg-[#0b7f74] group-open:text-white"
+                    ><svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-4 w-4"
+                    >
+                      <path d="m6 9 6 6 6-6" /></svg
+                  ></span>
+                </summary>
+                <p
+                  class="px-5 pb-5 text-base leading-relaxed md:text-sm text-[#4b5b6b]"
+                >
+                  The exact address and a map link are sent in your
+                  confirmation. Nador-Al Aroui airport is about 25 minutes away,
+                  and we can arrange a transfer on request.
+                </p>
+              </details>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <aside
+        aria-labelledby="help-title"
+        class="h-fit rounded-xl bg-linear-to-br from-[#1b4a5c] to-[#0f2236] p-6 text-white lg:sticky lg:top-6"
+      >
+        <p class="text-xs font-semibold uppercase">Still need help?</p>
+        <h2 id="help-title" class="mt-2 text-2xl font-bold">
+          Can’t find your answer?
+        </h2>
+        <p class="mt-2 text-sm">
+          Send us a message from the contact page and we reply within 24 h.
+        </p>
+        <a
+          href="contact.html"
+          class="mt-5 flex min-h-11 w-full items-center justify-center rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+        >
+          Contact us
+        </a>
+        <p class="mt-4 text-center text-xs">
+          Or book directly with
+          <a href="booking.html" class="font-semibold underline">the form</a>.
+        </p>
+      </aside>
+    </main>
+
+    <section id="contact" class="p-1 m-[25px] rounded-[18px] bg-[#112B39]">
+      <div
+        class="m-[25px] flex flex-col items-start justify-between gap-4 md:flex-row md:items-center"
+      >
+        <div>
+          <h2 class="text-[28px] font-bold text-[#ffffff]">
+            Can’t find your answer?
+          </h2>
+          <p class="text-[18px] text-[#D6E6EC]">
+            Write to us and we reply within 24 h, by email or WhatsApp.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/212600000000"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center gap-2 rounded-full bg-[#0b7f74] px-6 py-3 text-sm font-bold text-white hover:bg-[#1b4a5c]"
+        >
+          Write on WhatsApp <span aria-hidden="true">&rarr;</span>
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-[#0f2236] text-white">
+      <div
+        class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 lg:px-8"
+      >
+        <div>
+          <a
+            href="/index.html"
+            class="flex items-center gap-2 text-xl font-extrabold italic"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
+            >
+              <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
+            </svg>
+            marchica
+          </a>
+          <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
+            Premium expeditions including Kayaking across the lagoon, custom
+            Boat Trips, Hiking trails on Mount Gourougou, and authentic Culinary
+            Experiences, all designed for discovery.
+          </p>
+          <ul class="mt-5 flex gap-2">
+            <li>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >f</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >ig</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >yt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form aria-labelledby="news-title" class="md:justify-self-end">
+          <label id="news-title" for="email" class="text-sm text-[#dce8f6]"
+            >Subscribe for wave condition alerts &amp; discounts</label
+          >
+          <div class="mt-2 flex">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="Your email address"
+              class="min-w-0 flex-1 rounded-l-xl bg-[#1b4a5c] px-4 py-3 text-sm text-white placeholder:text-[#dce8f6]"
+            />
+            <button
+              type="submit"
+              class="rounded-r-xl bg-[#0b7f74] px-5 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+            >
+              Join
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="border-t border-[#1b4a5c]">
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-[#dce8f6] md:flex-row md:justify-between lg:px-8"
+        >
+          <p>© 2026 Marchica Ocean Adventures. All rights reserved.</p>
+          <ul class="flex gap-4">
+            <li>
+              <a href="/src/pages/privacy-policy.html" class="hover:underline"
+                >Privacy Policy</a
+              >
+            </li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Safety Protocols</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

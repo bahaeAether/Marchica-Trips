@@ -1,319 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book your outing – Marchica Ocean Adventures</title>
-  <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body class="bg-blue-100 text-slate-900 antialiased">
-
-  <header class="bg-white">
-    <div
-      class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8"
-    >
-      <a
-        href="/index.html"
-        class="flex items-center gap-2 text-xl font-extrabold italic"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your outing – Marchica Ocean Adventures</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../../dist/assets/index-D9tbdeKf.css" />
+  </head>
+  <body class="bg-blue-100 text-slate-900 antialiased">
+    <header class="bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8"
       >
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
-        >
-          <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
-        </svg>
-        marchica
-      </a>
-      <nav aria-label="Main navigation" class="hidden md:block">
-        <ul class="flex gap-8 text-sm">
-          <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="/src/pages/activities.html">Activities</a>
-          </li>
-          <li><a href="/src/pages/faq.html">FAQ</a></li>
-          <li>
-            <a href="/src/pages/booking.html" class="font-semibold text-[#0b7f74]"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="flex items-center gap-2">
-        <a
-          href="#booking-form"
-          class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
-        >
-          Book Now
-        </a>
-        <details class="relative md:hidden">
-          <summary
-            aria-label="Open menu"
-            class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg border border-[#0f2236]"
-          >
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              class="h-6 w-6"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </summary>
-          <nav
-            aria-label="Mobile navigation"
-            class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow"
-          >
-            <ul>
-              <li>
-                <a
-                  href="/index.html"
-                  class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/src/pages/activities.html"
-                  class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
-                  >Activities</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#reviews"
-                  class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
-                  >Reviews</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/src/pages/booking.html"
-                  class="block rounded-lg px-4 py-3 font-semibold text-[#0b7f74] hover:bg-[#dce8f6]"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </details>
-      </div>
-    </div>
-  </header>
-
-  <section
-    aria-labelledby="page-title"
-    class="relative overflow-hidden bg-linear-to-br from-[#1b4a5c] to-[#0f2236] text-white"
-  >
-    <div class="mx-auto max-w-6xl px-4 py-5 lg:px-8">
-      <p class="text-xs text-cyan-100">Home / Book</p>
-      <h1 id="page-title" class="mt-2 text-4xl font-extrabold md:text-5xl">
-        Book an activity
-      </h1>
-      <p class="mt-2 max-w-md text-sm text-cyan-100">
-        Fill in this form: we check availability and confirm your place within 24 h. No online payment is required.
-      </p>
-    </div>
-  </section>
-
-  <main class="mx-auto max-w-5xl px-4 py-8">
-    <h1 class="sr-only">Book your outing</h1>
-
-    <div class="grid gap-6 lg:grid-cols-3">
-
-      <!--FORM-->
-      <div class="lg:col-span-2">
-        <p class="mb-4 text-xs text-slate-600">
-          Fields marked with <span class="text-red-600" aria-hidden="true">*</span> are required.
-        </p>
-
-        <form id="booking-form" action="#" method="post" class="space-y-6">
-
-          <section aria-labelledby="outing-title" class="space-y-5 rounded-2xl bg-white p-6">
-            <h2 id="outing-title" class="text-lg font-semibold">Your outing</h2>
-
-            <div>
-              <label for="activity" class="mb-1.5 block text-sm font-semibold">
-                Activity <span class="text-red-600" aria-hidden="true">*</span>
-              </label>
-              <select id="activity" name="activity" required aria-describedby="activity-hint"
-                class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-                <option value="sunrise-kayak" selected>Sunrise Kayak (€35 per person)</option>
-                <option value="starlight-kayak">Starlight Kayak (€45 per person)</option>
-                <option value="traditional-moroccan-food">Traditional Moroccan food (€20 per person)</option>
-                <option value="nador-city-at-night">Discover Nador's city at night (€12 per person)</option>
-                <option value="gourougou-woods">Discover Gourougou woods (€25 per person)</option>
-                <option value="fishing">Fishing (€40 per person)</option>
-                <option value="traditional-handicraft-workshops">Traditional handicraft workshops (€35 per person)</option>
-                <option value="boat-tour">A boat tour (€25 per person)</option>
-              </select>
-              <p id="activity-hint" class="mt-1.5 text-xs text-slate-500">Prices are per person.</p>
-            </div>
-
-            <div class="grid gap-5 sm:grid-cols-2">
-              <div>
-                <label for="date" class="mb-1.5 block text-sm font-semibold">
-                  Preferred date <span class="text-red-600" aria-hidden="true">*</span>
-                </label>
-                <input type="date" id="date" name="date" required aria-describedby="date-hint"
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-                <p id="date-hint" class="mt-1.5 text-xs text-slate-500">Choose an upcoming day. We confirm availability.</p>
-              </div>
-
-              <div>
-                <label for="participants" class="mb-1.5 block text-sm font-semibold">
-                  Number of participants <span class="text-red-600" aria-hidden="true">*</span>
-                </label>
-                <input type="number" id="participants" name="participants" min="1" max="12" required aria-describedby="participants-hint"
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-                <p id="participants-hint" class="mt-1.5 text-xs text-slate-500">Between 1 and 12 people. For more, write to us.</p>
-              </div>
-            </div>
-          </section>
-
-          <section aria-labelledby="details-title" class="space-y-5 rounded-2xl bg-white p-6">
-            <h2 id="details-title" class="text-lg font-semibold">Your details</h2>
-
-            <div class="grid gap-5 sm:grid-cols-2">
-              <div>
-                <label for="first-name" class="mb-1.5 block text-sm font-semibold">
-                  First name <span class="text-red-600" aria-hidden="true">*</span>
-                </label>
-                <input type="text" id="first-name" name="first_name" autocomplete="given-name" required
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-              </div>
-
-              <div>
-                <label for="last-name" class="mb-1.5 block text-sm font-semibold">
-                  Last name <span class="text-red-600" aria-hidden="true">*</span>
-                </label>
-                <input type="text" id="last-name" name="last_name" autocomplete="family-name" required
-                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-              </div>
-            </div>
-
-            <div>
-              <label for="email" class="mb-1.5 block text-sm font-semibold">
-                Email address <span class="text-red-600" aria-hidden="true">*</span>
-              </label>
-              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint"
-                class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-              <p id="email-hint" class="mt-1.5 text-xs text-slate-500">We write to you here to confirm.</p>
-            </div>
-
-            <div>
-              <label for="phone" class="mb-1.5 block text-sm font-semibold">Phone or WhatsApp</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-hint"
-                class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30">
-              <p id="phone-hint" class="mt-1.5 text-xs text-slate-500">Optional. With the country code, for example +33 6 12 34 56 78. Useful to warn you about the weather.</p>
-            </div>
-
-          </section>
-
-          <section aria-labelledby="prepare-title" class="space-y-5 rounded-2xl bg-white p-6">
-            <h2 id="prepare-title" class="text-lg font-semibold">To prepare your outing</h2>
-
-            <div>
-              <label for="message" class="mb-1.5 block text-sm font-semibold">Message</label>
-              <textarea id="message" name="message" rows="4" maxlength="500" aria-describedby="message-hint"
-                class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"></textarea>
-              <p id="message-hint" class="mt-1.5 text-xs text-slate-500">Optional. Allergies, children's ages, special needs: 500 characters maximum.</p>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <input type="checkbox" id="consent" name="consent" required class="mt-0.5 h-4 w-4 accent-teal-600">
-              <label for="consent" class="text-sm">
-                I agree that Marchica Ocean Adventures may use this information to answer my booking request.
-                <span class="text-red-600" aria-hidden="true">*</span>
-              </label>
-            </div>
-          </section>
-
-          <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <button type="submit"
-              class="inline-flex items-center justify-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2">
-              Send my booking request
-              <span aria-hidden="true">→</span>
-            </button>
-            <p class="max-w-xs text-xs text-slate-600">We reply within 24 h. You can cancel free of charge up to 48 h before the outing.</p>
-          </div>
-
-        </form>
-      </div>
-
-      <aside aria-label="Booking information" class="space-y-6">
-
-        <section aria-labelledby="selection-title" class="rounded-2xl bg-cyan-900 p-6 text-white">
-          <p class="text-xs font-semibold uppercase tracking-wide text-cyan-100">Your selection</p>
-          <h2 id="selection-title" class="mt-1 text-xl font-bold">Sunrise Kayak</h2>
-
-          <p class="mt-4">
-            <strong class="block text-3xl font-bold">€35</strong>
-            <span class="text-sm text-cyan-100">per person</span>
-          </p>
-
-          <ul class="mt-5 space-y-3 border-t border-white/20 pt-5 text-sm">
-            <li class="flex items-center gap-2">
-              <svg class="h-4 w-4 shrink-0 text-cyan-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              2 h 30
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="h-4 w-4 shrink-0 text-cyan-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Up to 8 people
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="h-4 w-4 shrink-0 text-cyan-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-              Free cancellation up to 48 h before
-            </li>
-          </ul>
-        </section>
-
-        <section aria-labelledby="info-title" class="rounded-2xl bg-white p-6">
-          <h2 id="info-title" class="text-lg font-semibold">Good to know</h2>
-
-          <ul class="mt-4 space-y-4 text-sm">
-            <li class="flex items-start gap-3">
-              <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              Confirmation by email or WhatsApp within 24 h.
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-              Free cancellation up to 48 h before the outing.
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="mt-0.5 h-4 w-4 shrink-0 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-              In case of bad weather, we reschedule the outing or refund it.
-            </li>
-          </ul>
-
-          <p class="mt-5 text-xs text-slate-500">Prefer to write? Contact us directly.</p>
-
-          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"
-            class="mt-3 inline-flex items-center gap-2 rounded-full border border-slate-900 px-4 py-2 text-sm font-semibold hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2">
-            Write on WhatsApp
-            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-            <span class="sr-only">(opens in a new tab)</span>
-          </a>
-        </section>
-
-      </aside>
-
-    </div>
-  </main>
-
-  <footer class="bg-[#0f2236] text-white">
-    <div
-      class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 lg:px-8"
-    >
-      <div>
         <a
           href="/index.html"
           class="flex items-center gap-2 text-xl font-extrabold italic"
@@ -331,74 +29,612 @@
           </svg>
           marchica
         </a>
-        <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
-          Premium expeditions including Kayaking across the lagoon, custom
-          Boat Trips, Hiking trails on Mount Gourougou, and authentic Culinary
-          Experiences, all designed for discovery.
-        </p>
-        <ul class="mt-5 flex gap-2">
-          <li>
-            <a
-              href="#"
-              aria-label="Facebook"
-              class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
-              >f</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              aria-label="Instagram"
-              class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
-              >ig</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              aria-label="YouTube"
-              class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
-              >yt</a
-            >
-          </li>
-        </ul>
-      </div>
-      <form aria-labelledby="news-title" class="md:justify-self-end">
-        <label id="news-title" for="newsletter-email" class="text-sm text-[#dce8f6]"
-          >Subscribe for wave condition alerts &amp; discounts</label
-        >
-        <div class="mt-2 flex">
-          <input
-            id="newsletter-email"
-            name="email"
-            type="email"
-            required
-            autocomplete="email"
-            placeholder="Your email address"
-            class="min-w-0 flex-1 rounded-l-xl bg-[#1b4a5c] px-4 py-3 text-sm text-white placeholder:text-[#dce8f6]"
-          />
-          <button
-            type="submit"
-            class="rounded-r-xl bg-[#0b7f74] px-5 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+        <nav aria-label="Main navigation" class="hidden md:block">
+          <ul class="flex gap-8 text-sm">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/src/pages/activities.html">Activities</a>
+            </li>
+            <li><a href="/src/pages/faq.html">FAQ</a></li>
+            <li>
+              <a
+                href="/src/pages/booking.html"
+                class="font-semibold text-[#0b7f74]"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            href="#booking-form"
+            class="rounded-full bg-[#0b7f74] px-5 py-2 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
           >
-            Join
-          </button>
+            Book Now
+          </a>
+          <details class="relative md:hidden">
+            <summary
+              aria-label="Open menu"
+              class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg border border-[#0f2236]"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                class="h-6 w-6"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </summary>
+            <nav
+              aria-label="Mobile navigation"
+              class="absolute right-0 top-full z-40 mt-2 w-56 rounded-xl bg-white p-2 shadow"
+            >
+              <ul>
+                <li>
+                  <a
+                    href="/index.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/pages/activities.html"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Activities</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#reviews"
+                    class="block rounded-lg px-4 py-3 hover:bg-[#dce8f6]"
+                    >Reviews</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/pages/booking.html"
+                    class="block rounded-lg px-4 py-3 font-semibold text-[#0b7f74] hover:bg-[#dce8f6]"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </details>
         </div>
-      </form>
-    </div>
-    <div class="border-t border-[#1b4a5c]">
-      <div
-        class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-[#dce8f6] md:flex-row md:justify-between lg:px-8"
-      >
-        <p>© 2026 Marchica Ocean Adventures. All rights reserved.</p>
-        <ul class="flex gap-4">
-          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-          <li><a href="#" class="hover:underline">Terms of Service</a></li>
-          <li><a href="#" class="hover:underline">Safety Protocols</a></li>
-        </ul>
       </div>
-    </div>
-  </footer>
+    </header>
 
-</body>
+    <section
+      aria-labelledby="page-title"
+      class="relative overflow-hidden bg-linear-to-br from-[#1b4a5c] to-[#0f2236] text-white"
+    >
+      <div class="mx-auto max-w-6xl px-4 py-5 lg:px-8">
+        <p class="text-xs text-cyan-100">Home / Book</p>
+        <h1 id="page-title" class="mt-2 text-4xl font-extrabold md:text-5xl">
+          Book an activity
+        </h1>
+        <p class="mt-2 max-w-md text-sm text-cyan-100">
+          Fill in this form: we check availability and confirm your place within
+          24 h. No online payment is required.
+        </p>
+      </div>
+    </section>
+
+    <main class="mx-auto max-w-5xl px-4 py-8">
+      <h1 class="sr-only">Book your outing</h1>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <!--FORM-->
+        <div class="lg:col-span-2">
+          <p class="mb-4 text-xs text-slate-600">
+            Fields marked with
+            <span class="text-red-600" aria-hidden="true">*</span> are required.
+          </p>
+
+          <form id="booking-form" action="#" method="post" class="space-y-6">
+            <section
+              aria-labelledby="outing-title"
+              class="space-y-5 rounded-2xl bg-white p-6"
+            >
+              <h2 id="outing-title" class="text-lg font-semibold">
+                Your outing
+              </h2>
+
+              <div>
+                <label
+                  for="activity"
+                  class="mb-1.5 block text-sm font-semibold"
+                >
+                  Activity
+                  <span class="text-red-600" aria-hidden="true">*</span>
+                </label>
+                <select
+                  id="activity"
+                  name="activity"
+                  required
+                  aria-describedby="activity-hint"
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                >
+                  <option value="sunrise-kayak" selected>
+                    Sunrise Kayak (€35 per person)
+                  </option>
+                  <option value="starlight-kayak">
+                    Starlight Kayak (€45 per person)
+                  </option>
+                  <option value="traditional-moroccan-food">
+                    Traditional Moroccan food (€20 per person)
+                  </option>
+                  <option value="nador-city-at-night">
+                    Discover Nador's city at night (€12 per person)
+                  </option>
+                  <option value="gourougou-woods">
+                    Discover Gourougou woods (€25 per person)
+                  </option>
+                  <option value="fishing">Fishing (€40 per person)</option>
+                  <option value="traditional-handicraft-workshops">
+                    Traditional handicraft workshops (€35 per person)
+                  </option>
+                  <option value="boat-tour">
+                    A boat tour (€25 per person)
+                  </option>
+                </select>
+                <p id="activity-hint" class="mt-1.5 text-xs text-slate-500">
+                  Prices are per person.
+                </p>
+              </div>
+
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="date" class="mb-1.5 block text-sm font-semibold">
+                    Preferred date
+                    <span class="text-red-600" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                    aria-describedby="date-hint"
+                    class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                  />
+                  <p id="date-hint" class="mt-1.5 text-xs text-slate-500">
+                    Choose an upcoming day. We confirm availability.
+                  </p>
+                </div>
+
+                <div>
+                  <label
+                    for="participants"
+                    class="mb-1.5 block text-sm font-semibold"
+                  >
+                    Number of participants
+                    <span class="text-red-600" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    id="participants"
+                    name="participants"
+                    min="1"
+                    max="12"
+                    required
+                    aria-describedby="participants-hint"
+                    class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                  />
+                  <p
+                    id="participants-hint"
+                    class="mt-1.5 text-xs text-slate-500"
+                  >
+                    Between 1 and 12 people. For more, write to us.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section
+              aria-labelledby="details-title"
+              class="space-y-5 rounded-2xl bg-white p-6"
+            >
+              <h2 id="details-title" class="text-lg font-semibold">
+                Your details
+              </h2>
+
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label
+                    for="first-name"
+                    class="mb-1.5 block text-sm font-semibold"
+                  >
+                    First name
+                    <span class="text-red-600" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    autocomplete="given-name"
+                    required
+                    class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="last-name"
+                    class="mb-1.5 block text-sm font-semibold"
+                  >
+                    Last name
+                    <span class="text-red-600" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    autocomplete="family-name"
+                    required
+                    class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="mb-1.5 block text-sm font-semibold">
+                  Email address
+                  <span class="text-red-600" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-describedby="email-hint"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                />
+                <p id="email-hint" class="mt-1.5 text-xs text-slate-500">
+                  We write to you here to confirm.
+                </p>
+              </div>
+
+              <div>
+                <label for="phone" class="mb-1.5 block text-sm font-semibold"
+                  >Phone or WhatsApp</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  aria-describedby="phone-hint"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                />
+                <p id="phone-hint" class="mt-1.5 text-xs text-slate-500">
+                  Optional. With the country code, for example +33 6 12 34 56
+                  78. Useful to warn you about the weather.
+                </p>
+              </div>
+            </section>
+
+            <section
+              aria-labelledby="prepare-title"
+              class="space-y-5 rounded-2xl bg-white p-6"
+            >
+              <h2 id="prepare-title" class="text-lg font-semibold">
+                To prepare your outing
+              </h2>
+
+              <div>
+                <label for="message" class="mb-1.5 block text-sm font-semibold"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  maxlength="500"
+                  aria-describedby="message-hint"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-600/30"
+                ></textarea>
+                <p id="message-hint" class="mt-1.5 text-xs text-slate-500">
+                  Optional. Allergies, children's ages, special needs: 500
+                  characters maximum.
+                </p>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  required
+                  class="mt-0.5 h-4 w-4 accent-teal-600"
+                />
+                <label for="consent" class="text-sm">
+                  I agree that Marchica Ocean Adventures may use this
+                  information to answer my booking request.
+                  <span class="text-red-600" aria-hidden="true">*</span>
+                </label>
+              </div>
+            </section>
+
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white hover:bg-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
+              >
+                Send my booking request
+                <span aria-hidden="true">→</span>
+              </button>
+              <p class="max-w-xs text-xs text-slate-600">
+                We reply within 24 h. You can cancel free of charge up to 48 h
+                before the outing.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <aside aria-label="Booking information" class="space-y-6">
+          <section
+            aria-labelledby="selection-title"
+            class="rounded-2xl bg-cyan-900 p-6 text-white"
+          >
+            <p
+              class="text-xs font-semibold uppercase tracking-wide text-cyan-100"
+            >
+              Your selection
+            </p>
+            <h2 id="selection-title" class="mt-1 text-xl font-bold">
+              Sunrise Kayak
+            </h2>
+
+            <p class="mt-4">
+              <strong class="block text-3xl font-bold">€35</strong>
+              <span class="text-sm text-cyan-100">per person</span>
+            </p>
+
+            <ul class="mt-5 space-y-3 border-t border-white/20 pt-5 text-sm">
+              <li class="flex items-center gap-2">
+                <svg
+                  class="h-4 w-4 shrink-0 text-cyan-200"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                2 h 30
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="h-4 w-4 shrink-0 text-cyan-200"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                Up to 8 people
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  class="h-4 w-4 shrink-0 text-cyan-200"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                Free cancellation up to 48 h before
+              </li>
+            </ul>
+          </section>
+
+          <section
+            aria-labelledby="info-title"
+            class="rounded-2xl bg-white p-6"
+          >
+            <h2 id="info-title" class="text-lg font-semibold">Good to know</h2>
+
+            <ul class="mt-4 space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="mt-0.5 h-4 w-4 shrink-0 text-teal-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                Confirmation by email or WhatsApp within 24 h.
+              </li>
+              <li class="flex items-start gap-3">
+                <svg
+                  class="mt-0.5 h-4 w-4 shrink-0 text-teal-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                Free cancellation up to 48 h before the outing.
+              </li>
+              <li class="flex items-start gap-3">
+                <svg
+                  class="mt-0.5 h-4 w-4 shrink-0 text-teal-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                In case of bad weather, we reschedule the outing or refund it.
+              </li>
+            </ul>
+
+            <p class="mt-5 text-xs text-slate-500">
+              Prefer to write? Contact us directly.
+            </p>
+
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-3 inline-flex items-center gap-2 rounded-full border border-slate-900 px-4 py-2 text-sm font-semibold hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
+            >
+              Write on WhatsApp
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                />
+                <path d="M15 3h6v6" />
+                <path d="M10 14 21 3" />
+              </svg>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="bg-[#0f2236] text-white">
+      <div
+        class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 lg:px-8"
+      >
+        <div>
+          <a
+            href="/index.html"
+            class="flex items-center gap-2 text-xl font-extrabold italic"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              class="h-7 w-7 rounded-full bg-[#0b7f74] p-1 text-white"
+            >
+              <path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0" />
+            </svg>
+            marchica
+          </a>
+          <p class="mt-4 max-w-sm text-sm text-[#dce8f6]">
+            Premium expeditions including Kayaking across the lagoon, custom
+            Boat Trips, Hiking trails on Mount Gourougou, and authentic Culinary
+            Experiences, all designed for discovery.
+          </p>
+          <ul class="mt-5 flex gap-2">
+            <li>
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >f</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >ig</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1b4a5c] hover:bg-[#0b7f74]"
+                >yt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <form aria-labelledby="news-title" class="md:justify-self-end">
+          <label
+            id="news-title"
+            for="newsletter-email"
+            class="text-sm text-[#dce8f6]"
+            >Subscribe for wave condition alerts &amp; discounts</label
+          >
+          <div class="mt-2 flex">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="Your email address"
+              class="min-w-0 flex-1 rounded-l-xl bg-[#1b4a5c] px-4 py-3 text-sm text-white placeholder:text-[#dce8f6]"
+            />
+            <button
+              type="submit"
+              class="rounded-r-xl bg-[#0b7f74] px-5 text-sm font-semibold text-white hover:bg-[#1b4a5c]"
+            >
+              Join
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="border-t border-[#1b4a5c]">
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-[#dce8f6] md:flex-row md:justify-between lg:px-8"
+        >
+          <p>© 2026 Marchica Ocean Adventures. All rights reserved.</p>
+          <ul class="flex gap-4">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Safety Protocols</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
