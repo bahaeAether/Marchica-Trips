@@ -6,7 +6,6 @@ Site web responsive et accessible pour une agence proposant des activités autou
 
 - Accueil
 - Activités
-- Détail d’une activité
 - Réservation
 - FAQ
 
